@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background-color: #f9f7f6;
+  color: #5a2e0b; /* tom marrom-queimado suave */
+}
+
+.header {
+  position: relative;
+  height: 500px;
+  background: linear-gradient(rgba(255, 240, 230, 0.85), rgba(255, 240, 230, 0.85)), url('../img/psicologa.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.overlay {
+  max-width: 600px;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #d9b89c; /* tom suave da blusa */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(90, 46, 11, 0.3);
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin: 0 0 10px 0;
+  color: #a56b3c; /* tom mais forte da blusa */
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #7e553c; /* tom mais suave */
+}

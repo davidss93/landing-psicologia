@@ -287,3 +287,87 @@ body {
 .especialidades .btn:hover {
   background: #5b3318;
 }
+
+/* Seção Sobre */
+.sobre-section {
+  background: linear-gradient(to bottom, #fff, #fdf8f6);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  padding: 4rem 2rem;
+}
+
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estrutura de cada bloco */
+.sobre-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+.sobre-item.invertido {
+  flex-direction: row-reverse;
+}
+
+/* Imagens */
+.sobre-img {
+  flex: 1 1 40%;
+  min-height: 280px;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.foto-esquerda {
+  background-image: url('foto-esquerda.jpg'); /* substitua depois */
+  border-left: 8px solid #5a2e0b;
+}
+
+.foto-direita {
+  background-image: url('foto-direita.jpg'); /* substitua depois */
+  border-right: 8px solid #5a2e0b;
+}
+
+/* Texto */
+.sobre-texto {
+  flex: 1 1 50%;
+}
+
+.sobre-texto h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5a2e0b;
+  margin-bottom: 1rem;
+}
+
+.sobre-texto p {
+  color: #5c3a21;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  background: #9a5b30;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #7c3e12;
+}

@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   background-color: #f9f7f6;
   color: #5a2e0b;
 }
@@ -13,8 +13,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 60px 10%;
-  background: linear-gradient(rgba(255, 240, 230, 0.85), rgba(255, 240, 230, 0.85)), 
-              url('../img/psicologa.png') no-repeat center/cover;
+  background: linear-gradient(
+      rgba(255, 240, 230, 0.85),
+      rgba(255, 240, 230, 0.85)
+    ),
+    url("../img/psicologa.png") no-repeat center/cover;
 }
 
 /* CONTAINER INTERNO */
@@ -96,7 +99,8 @@ body {
     text-align: center;
   }
 
-  .text-section, .image-section {
+  .text-section,
+  .image-section {
     flex: unset;
   }
 }
@@ -217,7 +221,7 @@ body {
   .ajuda h2 {
     font-size: 1.6rem;
   }
-  
+
   .ajuda p {
     font-size: 1rem;
   }
@@ -227,7 +231,6 @@ body {
     max-width: 280px;
   }
 }
-
 
 .especialidades {
   padding: 60px 20px;
@@ -251,7 +254,7 @@ body {
   background: #d2987d;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #fff;
 }
@@ -290,7 +293,7 @@ body {
 
 /* Seção Sobre */
 .sobre-section {
-  background: #fbeee6; 
+  background: #fbeee6;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   padding: 3rem 0;
@@ -309,15 +312,14 @@ body {
 .sobre-item {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
   flex-wrap: nowrap;
-  margin-bottom: 4rem;
+  margin-bottom: 0;
 }
-
 
 /* Imagens */
 .sobre-img {
-  flex: 0 0 280px; /* largura fixa para imagem */
+  flex: 0 0 370px; /* imagem maior */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,9 +327,9 @@ body {
 
 .sobre-img img {
   width: 100%;
-  max-width: 260px;
+  max-width: 300px;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
   border: 4px solid #5a2e0b;
   box-shadow: 0 4px 16px rgba(90, 46, 11, 0.15);
   object-fit: cover;
@@ -336,46 +338,45 @@ body {
 
 .foto-esquerda,
 .foto-direita {
-  border-left: 8px solid #5a2e0b;
-  border-right: none;
-}
-
-.foto-direita {
-  border-left: none;
-  border-right: 8px solid #5a2e0b;
+  border: none;
 }
 
 /* Texto */
 .sobre-texto {
   flex: 1 1 0;
   min-width: 200px;
+  padding: 0;
 }
 
+
 .sobre-texto h2 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  color: #5a2e0b;
-  margin-bottom: 1rem;
+  color: #a56b3c;
+  margin-bottom: 0.7rem;
 }
 
 .sobre-texto p {
   color: #5c3a21;
-  margin-bottom: 1rem;
-  line-height: 1.6;
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 /* Responsivo */
 @media (max-width: 900px) {
   .sobre-item {
     flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  .sobre-img {
-    flex: unset;
+    gap: 1.2rem;
   }
   .sobre-img img {
-    max-width: 180px;
+    max-width: 220px;
+  }
+  .sobre-texto h2 {
+    font-size: 1.1rem;
+  }
+  .sobre-texto p {
+    font-size: 0.95rem;
   }
 }
 
@@ -394,4 +395,8 @@ body {
 .btn:hover {
   transform: scale(1.05);
   background: #7c3e12;
+}
+
+.sobre-texto .btn {
+  margin-top: 1.2rem;
 }

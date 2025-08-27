@@ -463,3 +463,56 @@ body {
 .faq-answer p {
   margin: 15px 0;
 }
+
+.site-footer {
+  background: #9A5B30;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 24px 0; /* aumenta o padding inferior */
+  font-size: 1rem;
+  min-height: 100px;
+  border-bottom: none;
+}
+
+.footer-content {
+  margin-bottom: 0;
+}
+
+.footer-content a,
+.footer-content .footer-link {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.footer-content a:hover,
+.footer-content .footer-link:hover {
+  color: #fbeee6;
+}
+
+.privacy-img {
+  display: block;
+  margin: 0 auto 16px auto;
+  max-width: 120px;
+}
+
+.privacy-policy {
+  background: transparent;
+  padding: 32px 0 0 0;
+  text-align: center;
+}
+
+.privacy-policy h1 {
+  color: #9A5B30;
+  font-size: 2rem;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.privacy-policy p {
+  color: #5a2e0b;
+  max-width: 700px;
+  margin: 0 auto 18px auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}

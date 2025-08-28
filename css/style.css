@@ -468,7 +468,7 @@ body {
   background: #9A5B30;
   color: #fff;
   text-align: center;
-  padding: 24px 0 24px 0; /* aumenta o padding inferior */
+  padding: 24px 0 24px 0; 
   font-size: 1rem;
   min-height: 100px;
   border-bottom: none;
